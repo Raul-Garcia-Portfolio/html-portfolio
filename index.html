@@ -3,17 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Raul Garcia Portfolio</title>
 
-  <!-- Make all relative links resolve under /html-portfolio/ on GitHub Pages -->
+  <!-- Keep all links inside your /html-portfolio/ subfolder -->
   <base href="/html-portfolio/">
+
   <style>
-    body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; max-width: 900px; margin: 40px auto; padding: 0 16px; }
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; text-decoration: none; color: inherit; }
-    .card img { display: block; width: 100%; height: auto; border-radius: 8px; }
-    .card h3 { margin: 12px 0 0 0; font-size: 1.1rem; }
-    nav a { margin-right: 12px; }
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      background-color: #fafafa;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 12px;
+      text-decoration: none;
+      color: inherit;
+      background-color: #fff;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -29,16 +104,20 @@
 
   <section class="projects">
     <!-- Movie Ranking Project -->
-    <a class="card" href="2.4%20Movie%20Ranking%20Project/index.html">
+    <a class="card" href="2.4-Movie-Ranking-Project/index.html">
       <img src="assets/images/movie-ranking.png" alt="Screenshot of the Movie Ranking Project" />
       <h3>Movie Ranking Project</h3>
     </a>
 
     <!-- Birthday Invite Project -->
-    <a class="card" href="3.4%20Birthday%20Invite%20Project/index.html">
+    <a class="card" href="3.4-Birthday-Invite-Project/index.html">
       <img src="assets/images/birthday-invite.png" alt="Screenshot of the Birthday Invite Project" />
       <h3>Birthday Invite Project</h3>
     </a>
   </section>
+
+  <footer>
+    <p>© 2025 Raul Garcia. All rights reserved.</p>
+  </footer>
 </body>
 </html>
